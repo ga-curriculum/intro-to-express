@@ -21,6 +21,7 @@ tktk Write a short but descriptive summary of the content in this module.
 | [Nodemon](./nodemon/README.md) | -- | -- | tktk skills covered |
 | [Define A Route](./define-a-route/README.md) | -- | -- | tktk skills covered |
 | [Request Response](./request-responses/README.md) | -- | -- | tktk skills covered |
+| [URL Parameters](./url-parameters/README.md) | -- | -- | tktk skills covered |
 | **Total content**                                        | -- | -- | --                  |
 
 ## Level Up content
