@@ -81,3 +81,17 @@ Browsing to [`**localhost:3000**`](http://localhost:3000) will hit our app’s r
 Using your Dev Tools in the browser, we will find that despite just sending back the text of `<h1>Hello Express</h1>`, the browser put together a minimal HTML document to display it in. The send method is a general-purpose way to respond to the request; however, we’ll soon use more specific methods.
 
 To get around having to restart the server after every change we make, we can use a fun command-line tool called...
+
+
+You Do: Define Another Route (3 mins) 💪
+Define another route that matches a get request to a path of /home that sends a text response of <h1>Home Page</h1>.
+Test it by browsing to localhost:3000/home.
+Review Question ❓
+Knowing what you know, do you think it's ok to define more than one route on the same path? For example:
+app.get('/cars', function(req, res) {
+	res.send('Here is a list of my cars...')
+})
+
+app.post('/cars', function(req, res) {
+	res.send('Thanks for the new car!')
+})
