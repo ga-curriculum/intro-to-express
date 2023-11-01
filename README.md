@@ -18,7 +18,7 @@ tktk Write a short but descriptive summary of the content in this module.
 | [Concepts](./concepts/README.md) | -- | -- | tktk skills covered |
 | [Build and Run 'server.js'](./build-and-run-serverjs/README.md) | -- | -- | tktk skills covered |
 | [Our First Route](./our-first-route/README.md) | -- | -- | tktk skills covered |
-| [Request Response](./request-responses/README.md) | -- | -- | tktk skills covered |
+| [Responding to Requests](./responding-to-requests/README.md) | -- | -- | tktk skills covered |
 | [URL Parameters](./url-parameters/README.md) | -- | -- | tktk skills covered |
 | **Total content**                                        | -- | -- | --                  |
 
