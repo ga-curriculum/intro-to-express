@@ -66,6 +66,14 @@ Express provides those two objects as arguments when it invokes the callback.
 
 > 😎 We'll refactor some of this code soon, but the most important takeaway is that routes must always be mounted in **`server.js`**, and routes will always have a callback function with both `req` and `res` parameters. Also, be careful not to flip the `req` and `res` parameters when you are writing your callback function.
 
+###  Run the Server
+
+Let's start the server now by simply running `nodemon`.
+
+```bash
+nodemon server
+```
+
 ## Update the Route
 
 Let's make a minor update to our root route:

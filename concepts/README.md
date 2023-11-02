@@ -14,4 +14,6 @@ In this lesson, you will cover the ***first*** of these three capabilities: **De
 
 ## The Express Framework
 
+![Express Home Page](./assets/expressjs-hp.png)
+
 [**Express**](https://expressjs.com/) is the most popular web framework for Node.js. It is minimalistic and lightweight, especially when compared to massive frameworks like Django and Rails. Express uses Node’s built-in HTTP module to listen for, and respond to, HTTP requests; Express simply adds those three web application capabilities on top of Node.
