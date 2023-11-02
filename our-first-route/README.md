@@ -4,19 +4,27 @@
 
 # Express - Hello World!
 
-Let’s write the obligatory ***Hello, World*** application:
+Let’s write the obligatory ***Hello, World*** application!
 
-Install the Express Module
-Let's use npm to install the Express module in this project:
+We will be using the basic structure of our Express app we already set up.
 
+### Install the Express Module
+
+Let's use `npm` to install the Express module in this project:
+
+```bash
 npm i express
-Note that i is a shortcut for install
+```
+
+> 📚 Note that `i` is a shortcut for `install`.
+
+Without this step, if we would try and run our server at this point we would receive an error since our app would be be trying to import a node module that we haven't installed yet.
 
 ## Our First Route
 
-Let’s define a *route*:
+Let’s define a *route* in the proper section of our Express app:
 
-```jsx
+```js
 // Mount routes
 
 app.get('/', function(req, res) {
@@ -24,28 +32,19 @@ app.get('/', function(req, res) {
 })
 ```
 
-Using send() is a general purpose way to respond to the request, however, it's kind of like using console.log() - soon we'll be using more specific methods.
-
-Using DevTools, we will find that despite just sending back the text of
-<h1>Hello World!</h1>,
-the browser "built" a minimal HTML document to display it in.
-
-<aside>
-📚 A route is a defined URL path and HTTP method combination that maps to a specific piece of functionality.
-
-</aside>
+> 📚 Note, using `.send()` is a general purpose way to respond to the request. It's kind of like using `console.log()`. ***Soon we'll be using more specific methods.***
 
 Like most web frameworks, Express uses the *HTTP Method* and the *Path* of the HTTP request to match a route defined in the application.
 
 In our first route, we defined a route using the `get` method on the Express `app` object.
 
-The `get` method defines a route that listens for a GET request. Other methods include `post`, `put`, and `delete` map to the HTTP verbs with the same names.
+The `get` method defines a route that listens for a `GET` request. Other methods include `post`, `put`, and `delete` which map to the HTTP verbs with the same names.
 
 The first argument provided to `app.get`, `/`, defines the path for the route. In this case, the root of the application (the root of the application is just the hostname like [**`localhost:3000`**](http://localhost:3000))
 
-**In Express, all strings used to define a path should start with a forward-slash character (`/`).** In tomorrow’s Express lesson, we’ll learn a preferred way of defining routes using the Express `Router` object, but you also need to know how to define routes this way.
+> **In Express, all strings used to define a path should start with a forward-slash character (`/`).** 
 
-### The Route’s Callback
+## The Route’s Callback
 
 The second argument provided to `app.get()` is a callback function:
 
