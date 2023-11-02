@@ -22,6 +22,12 @@ npm init
 
 Accept the defaults, ***except for the entry point*** - set this to be `server.js`.
 
+Add a file to our directory called `server.js`:
+
+```bash
+touch server.js
+```
+
 Open the project's folder in your code editor:
 
 ```bash
