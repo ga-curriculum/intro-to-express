@@ -70,6 +70,10 @@ npm i -g nodemon
 
 Thanks to the `main` key in **`package.json`**, we can start the server by simply running `nodemon`.
 
+```bash
+nodemon server
+```
+
 😎 This will not change for the entire unit - we'll always run our server using `nodemon`.
 
 You will see this all in action when you write your first route!
