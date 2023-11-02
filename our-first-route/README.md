@@ -6,6 +6,12 @@
 
 Let’s write the obligatory ***Hello, World*** application:
 
+Install the Express Module
+Let's use npm to install the Express module in this project:
+
+npm i express
+Note that i is a shortcut for install
+
 ## Our First Route
 
 Let’s define a *route*:

@@ -2,37 +2,41 @@
 
 **Learning objective:** By the end of this lesson, students will be able to tktk
 
-
-
 ## Basic Structure of Express App
 
 Here is a helpful outline of what a typical Express app does - let’s put this guide right in our **`*server.js*`**:
 
-// import modules
+```js
+// Here is where we require modules
+// We begin by loading Express
 
 import express from 'express'
 
-// create Express app
+// Here we create the Express app
 
 const app = express()
 
-// configure the app (app.set)
+// Configure the app (app.set)
+// More to come...
 
 
 
-// mount Middleware (app.use)
+// Mount Middleware (app.use)
+// More to come...
 
 
 
-// mount routes
+// Here is where we will mount our routes
 
 
 
-// tell the app to listen on port 3000
+// Tell the app to listen on port 3000
+// for HTTP requests from clients
 
 app.listen(3000, function() {
   console.log('Listening on port 3000')
 })
+```
 
 <aside>
 📚 The ***`server.js`*** file is typically the main entry point and configuration file for setting up an Express web server. It holds the middleware pipeline along with routes, and is where routing and server errors are handled.
