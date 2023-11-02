@@ -28,7 +28,7 @@ Let’s define a *route* in the proper section of our Express app:
 // Mount routes
 
 app.get('/', function(req, res) {
-  res.send('<h1>hello, friend</h1>')
+  res.send('<h1>Hello, World</h1>')
 })
 ```
 
@@ -40,7 +40,9 @@ In our first route, we defined a route using the `get` method on the Express `ap
 
 The `get` method defines a route that listens for a `GET` request. Other methods include `post`, `put`, and `delete` which map to the HTTP verbs with the same names.
 
-The first argument provided to `app.get`, `/`, defines the path for the route. In this case, the root of the application (the root of the application is just the hostname like [**`localhost:3000`**](http://localhost:3000))
+## The Route's Path
+
+The first argument provided to `app.get()`, `/`, defines the path for the route. In this case, the root of the application (the root of the application is just the hostname like [**`localhost:3000`**](http://localhost:3000))
 
 > **In Express, all strings used to define a path should start with a forward-slash character (`/`).** 
 
@@ -50,27 +52,21 @@ The second argument provided to `app.get()` is a callback function:
 
 Express will execute the route’s callback function only when a matching HTTP request (HTTP Method + Path) is received.
 
-The route’s callback function defines two parameters: `req` & `res`
+The route’s callback function defines two parameters which we will name: `req` & `res`
 
 - `req`: Represents Express’s [**request object**](https://expressjs.com/en/4x/api.html#req)
-res: Represents Express’s response object
+- `res`: Represents Express’s [**response object**](https://expressjs.com/en/4x/api.html#res)
 
 Express provides those two objects as arguments when it invokes the callback.
 
-- The request (`req`) object has properties and methods to access information regarding the current HTTP *request*, including any data the browser has sent.
-- The response (`res`) object contains properties and methods used to *end the request/response cycle* - like we’ve done so far using the `res.send` method.
+- The request (`req`) object has properties and methods to access information regarding the current HTTP ***request***, including any data the browser has sent.
+- The response (`res`) object contains properties and methods used to ***end the request/response cycle***. We've already done so using the `res.send()` method.
 
-<aside>
-❓ What is a request? What is a response? What is the request response cycle?
+> ❓ What is a request? What is a response? What is the request response cycle?
 
-</aside>
+> 😎 We'll refactor some of this code soon, but the most important takeaway is that routes must always be mounted in **`server.js`**, and routes will always have a callback function with both `req` and `res` parameters. Also, be careful not to flip the `req` and `res` parameters when you are writing your callback function.
 
-<aside>
-😎 We'll refactor some of this code soon, but the most important takeaway is that routes must always be mounted in `**server.js**`, and routes will always have a callback function with a `req` and `res` parameter. Also, be careful not to flip `req` and `res` when you are writing your callback function.
-
-</aside>
-
-### Update the Route
+## Update the Route
 
 Let's make a minor update to our root route:
 
