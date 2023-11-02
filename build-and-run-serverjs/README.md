@@ -58,6 +58,8 @@ However, any time changes are made to the application using this method, you'll 
 
 There is a better way... **NODEMON!**
 
+![Nodemon Icon](./assets/nodemon-icon.png)
+
 `nodemon` is a popular development tool used for automatically restarting our Express app when we save changes so no need to be continually restarting the server all the time!
 
 You should have installed it during installfest; however, you can make sure you have the latest version by running:
