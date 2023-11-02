@@ -38,15 +38,20 @@ app.listen(3000, function() {
 })
 ```
 
-<aside>
 📚 The ***`server.js`*** file is typically the main entry point and configuration file for setting up an Express web server. It holds the middleware pipeline along with routes, and is where routing and server errors are handled.
 
-</aside>
+😎 It's VERY normal to feel overwhelmed by `server.js`, and it will take you a few days to digest what is going on here. ***That is ok!***
 
-<aside>
-😎 We'll always use `**server.js`,** but we won't write it from scratch like we are today. It's VERY normal to feel overwhelmed by `**server.js**`, and it will take you a few days to digest what is going on here. ***That is ok!***
+Run the app:
 
-</aside>
+node server
+Browsing to localhost:3000 will hit our app's root route that we defined and return "Hello World!".
+
+Using DevTools, we will find that despite just sending back the text of
+<h1>Hello World!</h1>,
+the browser "built" a minimal HTML document to display it in.
+
+Using send() is a general purpose way to respond to the request, however, it's kind of like using console.log() - soon we'll be using more specific methods.
 
 # Nodemon
 
