@@ -20,7 +20,7 @@ Create a `package.json` using this command:
 npm init
 ```
 
-Accept the defaults, except for the entry point - set this to be `server.js`.
+Accept the defaults, ***except for the entry point*** - set this to be `server.js`.
 
 Open the project's folder in your code editor:
 
