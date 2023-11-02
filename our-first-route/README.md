@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - tktk Microlesson Name](./assets/hero.png)
+# ![[Introduction to Express] - Our First Route](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to tktk
 
@@ -23,6 +23,12 @@ app.get('/', function(req, res) {
   res.send('<h1>hello, friend</h1>')
 })
 ```
+
+Using send() is a general purpose way to respond to the request, however, it's kind of like using console.log() - soon we'll be using more specific methods.
+
+Using DevTools, we will find that despite just sending back the text of
+<h1>Hello World!</h1>,
+the browser "built" a minimal HTML document to display it in.
 
 <aside>
 📚 A route is a defined URL path and HTTP method combination that maps to a specific piece of functionality.
