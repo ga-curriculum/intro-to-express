@@ -4,7 +4,7 @@
 
 ### URL/Route Parameters
 
-In our web apps, we will often need to pass information, such as an identifier ***(often times and id)*** for a certain data resource, in the **path** of the HTTP request.
+In our web apps, we will often need to pass information, such as an identifier ***(often times an id)*** for a certain data resource, in the **path** of the HTTP request.
 
 **URL Parameters**, also known as **Route Parameters**, just like parameters in functions, provide a way for data to pass into the router & controller via the URL of the request.
 
