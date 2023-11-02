@@ -36,7 +36,7 @@ would have a `req.params` available in the controller of:
 console.log(req.params.catName) //=> "socks"
 ```
 
-> 📚 Note that all route param values are strings.
+> 📚 Note that all route params values are strings.
 
 This works perfectly in the case above where we are utilizing the cat's name, `"socks"`. You will probably be looking to match that params value to the particular cat in the data entity, which probably has a `name` attribute with a value of `"socks"` (a string). In this case:
 
