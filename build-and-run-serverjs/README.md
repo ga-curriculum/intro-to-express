@@ -70,12 +70,14 @@ npm i -g nodemon
 
 > 🧠 We usually install command-line tools using the `-g` (global) option.
 
-Thanks to the `main` key in **`package.json`**, we can start the server by simply running `nodemon`.
+Thanks to the `main` key in `package.json`, we can start the server by simply running `nodemon`.
 
 ```bash
 nodemon server
 ```
 
-😎 This will not change for the entire unit - we'll always run our server using `nodemon`.
+> ❗️ If we would run our server at this point we would receive an error since our app would be be trying to import a node module that we haven't installed yet. We'll run our server once the `express` module is installed.
+
+> 😎 This will not change for the entire unit - we'll always run our server using `nodemon`.
 
 You will see this all in action when you write your first route!
