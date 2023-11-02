@@ -52,7 +52,7 @@ node server
 
 > 📚 Note, when running node modules, you do not have to include the `.js` extension in the command.
 
-Browsing to `localhost:3000` will hit the app's root route.
+Browsing to [`localhost:3000`](http://localhost:3000) will hit the app's root route.
 
 However, any time changes are made to the application using this method, you'll have to stop and restart the server, ***every time!***
 
