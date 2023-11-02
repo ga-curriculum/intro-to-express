@@ -7,7 +7,7 @@
 Here is a helpful outline of what a typical Express app does - let’s put this guide right in our **`*server.js*`**:
 
 ```js
-// Here is where we require modules
+// Here is where we import modules
 // We begin by loading Express
 
 import express from 'express'
