@@ -24,7 +24,7 @@ Here is a helpful outline of what a typical Express app does - let’s put this 
 // Here is where we import modules
 // We begin by loading Express
 
-import express from 'express'
+const express = require('express')
 
 // Here we create the Express app
 
@@ -47,7 +47,7 @@ const app = express()
 // Tell the app to listen on port 3000
 // for HTTP requests from clients
 
-app.listen(3000, function() {
+app.listen(3000, () => {
   console.log('Listening on port 3000')
 })
 ```

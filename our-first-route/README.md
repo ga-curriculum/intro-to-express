@@ -15,7 +15,7 @@ Let’s define a *route* in the proper section of our Express app:
 ```js
 // Mount routes
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
 ```
@@ -64,7 +64,7 @@ Express provides those two objects as arguments when it invokes the callback.
 
 > ❓ What is a request? What is a response? What is the request response cycle?
 
-> 😎 We'll refactor some of this code soon, but the most important takeaway is that routes must always be mounted in **`server.js`**, and routes will always have a callback function with both `req` and `res` parameters. Also, be careful not to flip the `req` and `res` parameters when you are writing your callback function.
+> 😎 The most important takeaway here is that routes must always be mounted in **`server.js`**, even though code may be refactored differently in the future, and routes will always have a callback function with both `req` and `res` parameters. Also, be careful not to flip the `req` and `res` parameters when you are writing your callback function.
 
 ## Update the Route
 
@@ -72,7 +72,7 @@ Let's make a minor update to our root route:
 
 ```jsx
 // Mount routes
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.send('<h1>Hello Express!</h1>')
 })
 ```
@@ -98,11 +98,11 @@ Using your Dev Tools in the browser, we will find that despite just sending back
 Knowing what you know, do you think it's ok to define more than one route on the same path? For example:
 
 ```js
-app.get('/cars', function(req, res) {
+app.get('/cars', (req, res) => {
 	res.send('Here is a list of my cars...')
 })
 
-app.post('/cars', function(req, res) {
+app.post('/cars', (req, res) => {
 	res.send('Thanks for the new car!')
 })
 ```

@@ -30,7 +30,7 @@ and a link like this:
 <a href="/cats/socks">Socks!</a>
 ```
 
-would have a `req.params` available in the controller of:
+would have a `req.params` value available, equal to the value in the url:
 
 ```js
 console.log(req.params.catName) //=> "socks"
