@@ -2,6 +2,20 @@
 
 **Learning objective:** By the end of this lesson, students will be able to build the most basic structure of an **Express** server and know how to start it.
 
+### Install the Express Module
+
+Before we begin building our server, let's use `npm` to install the Express module in this project:
+
+```bash
+npm i express
+```
+
+> 📚 Note that `i` is a shortcut for `install`.
+
+Without this step, if we would try and run our server once we wrote the minimum, necessary code, we would receive an error since our app would be be trying to import a node module that we haven't installed yet.
+
+Now that `express` is installed, let's write the basic code needed to create our server.
+
 ## Basic Structure of Express App
 
 Here is a helpful outline of what a typical Express app does - let’s put this guide right in our **`server.js`**:
@@ -76,8 +90,16 @@ Thanks to the `main` key in `package.json`, we can start the server by simply ru
 nodemon server
 ```
 
-> ❗️ If we would run our server at this point we would receive an error since our app would be be trying to import a node module that we haven't installed yet. We'll run our server once the `express` module is installed.
-
 > 😎 This will not change for the entire unit - we'll always run our server using `nodemon`.
 
-You will see this all in action when you write your first route!
+## Run the Server
+
+Now that we have `nodemon` installed, let test out both that tool and our code by running our server. Let's runn the following from above in our terminal:
+
+```bash
+nodemon server
+```
+
+Our server should be up and running and you should see something like this:
+
+![Server Running](./assets/server-running.png)

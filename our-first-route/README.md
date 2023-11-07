@@ -8,18 +8,6 @@ Let’s write the obligatory ***Hello, World*** application!
 
 We will be using the basic structure of our Express app we already set up.
 
-### Install the Express Module
-
-Let's use `npm` to install the Express module in this project:
-
-```bash
-npm i express
-```
-
-> 📚 Note that `i` is a shortcut for `install`.
-
-Without this step, if we would try and run our server at this point we would receive an error since our app would be be trying to import a node module that we haven't installed yet.
-
 ## Our First Route
 
 Let’s define a *route* in the proper section of our Express app:
