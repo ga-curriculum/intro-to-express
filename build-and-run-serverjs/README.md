@@ -1,6 +1,6 @@
 # ![[Introduction to Express] - Build and Run 'server.js'](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to build the most basic structure of an **Express** server and know how to start it.
 
 ## Basic Structure of Express App
 

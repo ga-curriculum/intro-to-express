@@ -1,6 +1,6 @@
 # ![[Introduction to Express] - Setup](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to generate and initialize a new `node` project with the intention of creating an **Express** server.
 
 Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
 ```bash

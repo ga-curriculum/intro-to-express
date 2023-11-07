@@ -1,6 +1,6 @@
 # ![[Introduction to Express] - Concepts](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to briefly describe what **Express** is, what it does, and why web application frameworks are beneficial.
 
 ## The Three Fundamental Capabilities of Web Application Frameworks
 

@@ -1,6 +1,6 @@
 # ![[Introduction to Express] - Responding to Requests](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to briefly describe the different responses an **Express** server can send.
 
 # Ways to Respond to a Request
 

@@ -1,6 +1,6 @@
 # ![[Introduction to Express] - URL Parameters](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to describe how parameters are used in URLs to access specific requested data.
 
 ### URL/Route Parameters
 

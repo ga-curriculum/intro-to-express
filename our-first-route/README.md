@@ -1,6 +1,6 @@
 # ![[Introduction to Express] - Our First Route](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to write routes for an **Express** server and understand the responsibilities of it's path and callback.
 
 # Express - Hello World!
 
