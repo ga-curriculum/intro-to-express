@@ -2,7 +2,7 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+tktk This module will cover the basics of building an Express server. You should understand the purpose of Express, how to build and run a server utilizing Express, writing routes to access data, and how servers respond to requests.
 
 ## Prerequisites
 
