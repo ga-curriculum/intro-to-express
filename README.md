@@ -2,21 +2,25 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+tktk This module will cover the basics of building an Express server. You should understand the purpose of Express, how to build and run a server utilizing Express, writing routes to access data, and how servers respond to requests.
 
 ## Prerequisites
 
-- tktk
-- tktk
-- tktk
+- Introduction to Full-Stack Development
+- HTTP Request Response Cycle
+- Introduction to Node
+- Common JS Modules
 
 ## Content
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [tktk Microlesson Name](./tktk-microlesson-01/README.md) | -- | -- | tktk skills covered |
-| [tktk Microlesson Name](./tktk-microlesson-02/README.md) | -- | -- | tktk skills covered |
-| [tktk Microlesson Name](./tktk-microlesson-03/README.md) | -- | -- | tktk skills covered |
+| [Setup](./setup/README.md) | -- | -- | tktk skills covered |
+| [Concepts](./concepts/README.md) | -- | -- | tktk skills covered |
+| [Build and Run 'server.js'](./build-and-run-serverjs/README.md) | -- | -- | tktk skills covered |
+| [Our First Route](./our-first-route/README.md) | -- | -- | tktk skills covered |
+| [Responding to Requests](./responding-to-requests/README.md) | -- | -- | tktk skills covered |
+| [URL Parameters](./url-parameters/README.md) | -- | -- | tktk skills covered |
 | **Total content**                                        | -- | -- | --                  |
 
 ## Level Up content
