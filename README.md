@@ -6,9 +6,10 @@ tktk Write a short but descriptive summary of the content in this module.
 
 ## Prerequisites
 
-- tktk
-- tktk
-- tktk
+- Introduction to Full-Stack Development
+- HTTP Request Response Cycle
+- Introduction to Node
+- Common JS Modules
 
 ## Content
 
