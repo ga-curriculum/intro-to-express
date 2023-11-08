@@ -19,7 +19,6 @@ tktk This module will cover the basics of building an Express server. You should
 | [Concepts](./concepts/README.md) | -- | -- | tktk skills covered |
 | [Build and Run 'server.js'](./build-and-run-serverjs/README.md) | -- | -- | tktk skills covered |
 | [Our First Route](./our-first-route/README.md) | -- | -- | tktk skills covered |
-| [Responding to Requests](./responding-to-requests/README.md) | -- | -- | tktk skills covered |
 | [URL Parameters](./url-parameters/README.md) | -- | -- | tktk skills covered |
 | **Total content**                                        | -- | -- | --                  |
 
