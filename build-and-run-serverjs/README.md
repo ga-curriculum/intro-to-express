@@ -1,7 +1,6 @@
 # ![[Introduction to Express] - Build and Run 'server.js'](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to build the most basic structure of an **Express** server and know how to start it.
-
 ### Install the Express Module
 
 Before we begin building our server, let's use `npm` to install the Express module in this project:
@@ -12,10 +11,9 @@ npm i express
 
 > 📚 Note that `i` is a shortcut for `install`.
 
-Without this step, if we would try and run our server once we wrote the minimum, necessary code, we would receive an error since our app would be be trying to import a node module that we haven't installed yet.
+Now that we've done this, the Express framework is available for us to use when building our application.  Without this step, if we were to try to run our server code, we would receive an error since our app would be be trying to import a node module that we haven't installed yet.
 
 Now that `express` is installed, let's write the basic code needed to create our server.
-
 ## Basic Structure of Express App
 
 Here is a helpful outline of what a typical Express app does - let’s put this guide right in our **`server.js`**:
@@ -26,78 +24,55 @@ Here is a helpful outline of what a typical Express app does - let’s put this 
 
 const express = require('express')
 
-// Here we create the Express app
+// The "express" variable we just created has lots of different functionality that helps developers build web applications.  We could have called it anything, but let's stick to something meaningful.
+// Below we use express() to generate an "app" and assign the result to a variable.  These kinds of "apps" usually handle things like creating routes and having the server start listening for requests.
 
 const app = express()
-
-// Configure the app (app.set)
-// More to come...
-
-
-
-// Mount Middleware (app.use)
-// More to come...
-
-
 
 // Here is where we will mount our routes
 
 
 
-// Tell the app to listen on port 3000
-// for HTTP requests from clients
+// Tell the app to listen on port 3000 for requests from clients.
+// Every computer has thousands of ports on which it can listen for requests, but each port can only be assigned to one software application at a time.  Once assigned, requests can come in to that port and be handled by the application, much like a boat sails into an actual port in real life.
 
 app.listen(3000, () => {
   console.log('Listening on port 3000')
 })
 ```
 
-📚 The **`server.js`** file is typically the main entry point and configuration file for setting up an Express web server. It holds the middleware pipeline along with routes, and is where routing and server errors are handled.
-
-😎 It's VERY normal to feel overwhelmed by **`server.js`**, and it will take you a few days to digest what is going on here. ***That is ok!***
-
+📚 The **`server.js`** file is typically the main entry point and configuration file for setting up an Express web server.
 ## Nodemon
 
-To run the app, we can easily use the `node` keyward followed by the name of the file you would like to run, in our case, `server.js`:
+To run the app, we can easily use the `node` keyword followed by the name of the file you would like to run (in our case, `server.js`):
 
 ```bash
-node server
+node server.js
 ```
 
-> 📚 Note, when running node modules, you do not have to include the `.js` extension in the command.
-
-Browsing to [`localhost:3000`](http://localhost:3000) will hit the app's root route.
-
-However, any time changes are made to the application using this method, you'll have to stop and restart the server, ***every time!***
+However, any time changes are made to the application's code using this method, you'll have to stop and restart the server, ***every time!***
 
 There is a better way... **NODEMON!**
 
 ![Nodemon Icon](./assets/nodemon-icon.png)
 
-`nodemon` is a popular development tool used for automatically restarting our Express app when we save changes so no need to be continually restarting the server all the time!
+`nodemon` is a popular command line tool used for automatically restarting our Express app when we save changes to its code.  No need to be continually restarting the server all the time!
 
-You should have installed it during installfest; however, you can make sure you have the latest version by running:
-
-```bash
-npm i -g nodemon
-```
-
-> 🧠 We usually install command-line tools using the `-g` (global) option.
-
-Thanks to the `main` key in `package.json`, we can start the server by simply running `nodemon`.
+Install it using:
 
 ```bash
-nodemon server
+sudo npm i -g nodemon
 ```
 
-> 😎 This will not change for the entire unit - we'll always run our server using `nodemon`.
+> 🧠 We usually install command-line tools using the `-g` (global) option.  `sudo` may or may not be necessary depending on your computer.
 
+Thanks to the `main` property  in `package.json` file that we set when we ran `npm init` during the setup section of this module, we can start the server by simply running `nodemon`, and it will automatically run `server.js`.
 ## Run the Server
 
-Now that we have `nodemon` installed, let test out both that tool and our code by running our server. Let's runn the following from above in our terminal:
+Now that we have `nodemon` installed, let test out both that tool and our code by running our server. Let's run the following in our terminal:
 
 ```bash
-nodemon server
+nodemon
 ```
 
 Our server should be up and running and you should see something like this:
