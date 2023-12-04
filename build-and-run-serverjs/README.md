@@ -27,11 +27,12 @@ Here is an outline of what a typical Express app does - let’s put this guide r
 const express = require('express')
 
 // The "express" variable we just created has a lot of different functionality that helps developers build web applications. We could have called it anything, but let's stick to something meaningful.
-// Below we use express() to generate an "app" object and assign it to a variable. `app` is an object, with methods that handle things like creating routes and having the server start listening for requests.
+// Below we use express() to generate an "app" object and assign it to a variable. The "app" object has methods on it that handle things like creating routes and having the server start listening for requests.
 
 const app = express()
 
-// Here is where we will mount our routes:
+// Here is where we will mount our routes (left intentionally empty, for now):
+
 
 
 
