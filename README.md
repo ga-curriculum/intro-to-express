@@ -16,10 +16,10 @@ This module will cover the basics of building an Express server. You should unde
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
 | [Setup](./setup/README.md) | -- | -- | -- |
-| [Concepts](./concepts/README.md) | -- | -- | tktk skills covered |
-| [Build and Run 'server.js'](./build-and-run-serverjs/README.md) | -- | -- | tktk skills covered |
-| [Our First Route](./our-first-route/README.md) | -- | -- | tktk skills covered |
-| [URL Parameters](./url-parameters/README.md) | -- | -- | tktk skills covered |
+| [Concepts](./concepts/README.md) | -- | -- | Describe Express and the important of web frameworks. |
+| [Build and Run 'server.js'](./build-and-run-serverjs/README.md) | -- | -- | Scaffold the basic Express structure. |
+| [Our First Route](./our-first-route/README.md) | -- | -- | Write routes for Express using res.send(). |
+| [URL Parameters](./url-parameters/README.md) | -- | -- | Describe how parameters are used in URLs to access specific requested data |
 | **Total content**                                        | -- | -- | --                  |
                                      | -- | -- | --                  |
 
