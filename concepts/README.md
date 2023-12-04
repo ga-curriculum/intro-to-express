@@ -14,4 +14,7 @@
 
 ![Express Home Page](./assets/expressjs-hp.png)
 
-[**Express**](https://expressjs.com/) is the most popular web application framework for Node.js, and it's one of the most popular web application frameworks across all technologies. When it comes to having a structure that you have to follow in order to build your applications, Express is pretty flexible.  This means you have more control over how you build your application, which is great.  It also means that there's less to learn.  You can get started building pretty quickly!
+[**Express**](https://expressjs.com/) is the most popular web application framework for Node.js, and one of the most popular web application frameworks across all technologies. 
+
+Express is fairly flexible and minimalist, meaning developers have more control over how they build their applications. It also means that there's less to learn to get started!
+
