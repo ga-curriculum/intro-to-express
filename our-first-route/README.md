@@ -64,6 +64,6 @@ Since we started our server using `nodemon`, the browser should reveal the updat
 
 ## You Do: Define Another Route 💪
 
-- Define another route that matches a get request to a path of `/home` that sends a text response of `<h1>Home Page</h1>`.
+- Define another route that matches a `get` request to a path of `/home` that sends a response of `<h1>Home Page</h1>`.
 
 - Test it by browsing to `localhost:3000/home`.

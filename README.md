@@ -1,4 +1,4 @@
-# ![[tktk Module Name]](./assets/tktk-hero.png)
+# ![[Intro to Express]](./assets/tktk-hero.png)
 
 ## About
 
@@ -21,27 +21,12 @@ This module will cover the basics of building an Express server. You should unde
 | [Our First Route](./our-first-route/README.md) | -- | -- | tktk skills covered |
 | [URL Parameters](./url-parameters/README.md) | -- | -- | tktk skills covered |
 | **Total content**                                        | -- | -- | --                  |
-
-## Level Up content
-
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-01.md) | -- | -- | tktk skills covered |
-| [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-02.md) | -- | -- | tktk skills covered |
-| [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-03.md) | -- | -- | tktk skills covered |
-| **Total Level Up content**                                          | -- | -- | --                  |
+                                     | -- | -- | --                  |
 
 ## References
 
 📖 [Reference Materials](./references/README.md)
 
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
 
 ## Internal resources
 
