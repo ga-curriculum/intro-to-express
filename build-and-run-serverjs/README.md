@@ -27,7 +27,7 @@ Here is an outline of what a typical Express app does - let’s put this guide r
 const express = require('express')
 
 // The "express" variable we just created has a lot of different functionality that helps developers build web applications. We could have called it anything, but let's stick to something meaningful.
-// Below we use express() to generate an "app" and assign the result to a variable. These kinds of "apps" usually handle things like creating routes and having the server start listening for requests.
+// Below we use express() to generate an "app" object and assign it to a variable. `app` is an object, with methods that handle things like creating routes and having the server start listening for requests.
 
 const app = express()
 
@@ -73,12 +73,12 @@ Thanks to the `main` property in `package.json`, we can start the server by simp
 
 ## Run the Server
 
-Now that we have `nodemon` installed, let test out both that tool and our code by running our server. Let's run the following in our terminal:
+Now that we have `nodemon` installed, let test out both that tool and our code by running our server. Run the following command: 
 
 ```bash
 nodemon
 ```
 
-Our server should be up and running and you should see something like this:
+Our server should be up and running, and you should see something like this:
 
 ![Server Running](./assets/server-running.png)
