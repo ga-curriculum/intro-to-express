@@ -1,8 +1,8 @@
-# ![[tktk Module Name]](./assets/tktk-hero.png)
+# ![[Intro to Express]](./assets/tktk-hero.png)
 
 ## About
 
-tktk This module will cover the basics of building an Express server. You should understand the purpose of Express, how to build and run a server utilizing Express, writing routes to access data, and how servers respond to requests.
+This module will cover the basics of building an Express server. You should understand the purpose of Express, how to build and run a server utilizing Express, writing routes to access data, and how servers respond to requests.
 
 ## Prerequisites
 
@@ -15,33 +15,18 @@ tktk This module will cover the basics of building an Express server. You should
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [Setup](./setup/README.md) | -- | -- | tktk skills covered |
-| [Concepts](./concepts/README.md) | -- | -- | tktk skills covered |
-| [Build and Run 'server.js'](./build-and-run-serverjs/README.md) | -- | -- | tktk skills covered |
-| [Our First Route](./our-first-route/README.md) | -- | -- | tktk skills covered |
-| [URL Parameters](./url-parameters/README.md) | -- | -- | tktk skills covered |
+| [Setup](./setup/README.md) | -- | -- | -- |
+| [Concepts](./concepts/README.md) | -- | -- | Describe Express and the important of web frameworks. |
+| [Build and Run 'server.js'](./build-and-run-serverjs/README.md) | -- | -- | Scaffold the basic Express structure. |
+| [Our First Route](./our-first-route/README.md) | -- | -- | Write routes for Express using res.send(). |
+| [URL Parameters](./url-parameters/README.md) | -- | -- | Describe how parameters are used in URLs to access specific requested data |
 | **Total content**                                        | -- | -- | --                  |
-
-## Level Up content
-
-| Lesson | Video Time | Video | Skills |
-| ------ |:----------:|:-----:| ------ |
-| [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-01.md) | -- | -- | tktk skills covered |
-| [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-02.md) | -- | -- | tktk skills covered |
-| [tktk Level Up Microlesson Name](./level-up/tktk-microlesson-03.md) | -- | -- | tktk skills covered |
-| **Total Level Up content**                                          | -- | -- | --                  |
+                                     | -- | -- | --                  |
 
 ## References
 
 📖 [Reference Materials](./references/README.md)
 
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
 
 ## Internal resources
 
