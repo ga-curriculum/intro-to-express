@@ -1,4 +1,4 @@
-# ![[Introduction to Express] - Build and Run 'server.js'](./assets/hero.png)
+# ![Intro to Express - Build and Run 'server.js'](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to build the basic structure of an **Express** server and know how to start it.
 
@@ -57,8 +57,6 @@ node server.js
 However, any time changes are made to the application's code using this method, you'ld have to stop and restart the server, ***every time!***
 
 There is a better way... **NODEMON!**
-
-![Nodemon Icon](./assets/nodemon-icon.png)
 
 `nodemon` is a popular command line tool used for automatically restarting our Express app when we save changes to its code. No more need to continually restart the server all the time!
 

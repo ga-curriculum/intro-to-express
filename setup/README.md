@@ -1,4 +1,4 @@
-# ![[Introduction to Express] - Setup](./assets/hero.png)
+# ![Intro to Express - Setup](./assets/hero.png)
 
 ## Setup
 

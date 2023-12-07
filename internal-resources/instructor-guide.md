@@ -1,4 +1,4 @@
-# ![Instructor Guide](../assets/instructor-guide.png)
+# ![Intro to Express - Instructor Guide](../assets/instructor-guide.png)
 
 ---
 
