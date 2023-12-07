@@ -1,4 +1,4 @@
-# ![[Intro to Express]](./assets/tktk-hero.png)
+# ![Intro to Express](./assets/hero.png)
 
 ## About
 
