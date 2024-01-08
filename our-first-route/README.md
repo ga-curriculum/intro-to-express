@@ -8,7 +8,7 @@ By tradition in the programming world, the first program you write in a new lang
 
 ## Our First Route
 
-Our first route will be a `get` request to the location `localhost:3000/`. The documentation shows that the [`get`](https://expressjs.com/en/5x/api.html#app.get) method defines a route that listens for a `GET` request.
+Our first route will be a `GET` request to the location `localhost:3000/`. The documentation shows that the [`get`](https://expressjs.com/en/5x/api.html#app.get) method defines a route that listens for a `GET` request.
 
 > Other methods include `post`, `put`, and `delete`, which map to the HTTP verbs of the same names.
 
@@ -37,8 +37,8 @@ The second argument for `app.get()` is a callback function. Express will execute
 
 The route’s callback function defines two parameters which we will name `req` & `res`. We could call them anything, but using those names is the convention.
 
-- `req`: Represents Express’s [**request object**](https://expressjs.com/en/5x/api.html#req)
-- `res`: Represents Express’s [**response object**](https://expressjs.com/en/5x/api.html#res)
+- `req`: Represents Express’s [**Request Object**](https://expressjs.com/en/5x/api.html#req)
+- `res`: Represents Express’s [**Response Object**](https://expressjs.com/en/5x/api.html#res)
 
 Express provides those two objects as arguments when it invokes the callback.
 
@@ -69,5 +69,5 @@ Since we started our server using `nodemon`, the browser should reveal the updat
 
 Let's get in a rep of the above learnings:
 
-- Define another route that matches a `get` request to a path of `/home` that sends a response of `<h1>Home Page</h1>`.
+- Define another route that matches a `GET` request to a path of `/home` that sends a response of `<h1>Home Page</h1>`.
 - Test it by browsing to `localhost:3000/home`.

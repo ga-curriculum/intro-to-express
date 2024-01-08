@@ -30,7 +30,7 @@ In your browser, visit [`localhost:3000/123`](http://localhost:3000/123). Now vi
 
 In the above route, the path `/:itemNumber` tells Express to create a route whose path is a `/` followed by any string (e.g., 123, 456, foo, bar, etc.). When a matching request comes in, Express will create a property on `req.params` with a key of `itemNumber` and a value of whatever comes after the slash in the request's path.
 
-If the URL is [`localhost:3000/123`](http://localhost:3000/123), then `req.params.itemNumber` has the value 123. If the URL is [`localhost:3000/456`](http://localhost:3000/456), then `req.params.itemNumber` has the value 456.
+> 🧠 If we were to `console.log` the `req.params` object, we would see `{ itemNumber: '123' }` or `{ itemNumber: '456' }` depending on the request.
 
 ## URL Parameters and Route Order
 
@@ -48,8 +48,8 @@ app.get('/about', (req, res) => {
 
 We have two routes here:
 
-- The first route has a path of `/:name` and will match any request that starts with a `/` followed by any string.
-- The second route has a path of `/about` and will match any request that starts with `/about`.
+- The first route has a path of `/:name` and will match any `GET` request that starts with a `/` followed by any string.
+- The second route has a path of `/about` and will match any `GET` request that starts with `/about`.
 
 Which route would match if we were to try to visit [`localhost:3000/about`](http://localhost:3000/about)? The first route would match because `/about` starts with a `/` followed by any string. This means the second route will never match because the first route will always match first.
 
@@ -60,4 +60,4 @@ So, when developing these routes, it's essential to consider the order in which 
 Let's get in a rep of the above learnings:
 
 - Create a new route that listens for a `GET` request to the path `/greet/:name`.
-- When a request comes in, send a response that says "Hello, [name]!" where [name] is the value of the `name` parameter in the URL.
+- When a request comes in, send a response that says `"Hello, [name]!"` where `[name]` is the value of the `name` parameter in the URL.

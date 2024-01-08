@@ -30,7 +30,7 @@ const express = require('express')
 that help developers build web applications. We could have called it
 anything, but let's stick to something meaningful.*/
 
-/* Below, we use Express () to generate an "app" object and assign it to a
+/* Below, we use express() to generate an "app" object and assign it to a
 variable. The "app" object has methods like creating
 routes and having the server start listening for requests. */
 const app = express()
