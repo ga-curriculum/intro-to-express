@@ -31,3 +31,33 @@ In your browser, visit [`localhost:3000/123`](http://localhost:3000/123). Now vi
 In the above route, the path `/:itemNumber` tells Express to create a route whose path is a `/` followed by any string (e.g. 123, 456, foo, bar, etc). When a matching request comes in, Express will then create a property on `req.params` with a key of `itemNumber` and a value of whatever comes after the slash in the path of the request.
 
 If the URL is [`localhost:3000/123`](http://localhost:3000/123) then `req.params.itemNumber` has the value 123.  If the URL is [`localhost:3000/456`](http://localhost:3000/456) then `req.params.itemNumber` has the value 456.
+
+## URL Parameters and Route Order
+
+When defining routes with URL parameters, it's important to consider the order in which the routes are defined.  Consider the following two routes:
+
+```js
+app.get('/:name', (req, res) => {
+  res.send(`Hello ${req.params.name}!`);
+});
+
+app.get('/about', (req, res) => {
+  res.send('About Page');
+});
+```
+
+We have two routes here:
+
+- The first route has a path of `/:name` and will match any request that starts with a `/` followed by any string.
+- The second route has a path of `/about` and will match any request that starts with `/about`.
+
+If we were to try to visit [`localhost:3000/about`](http://localhost:3000/about), which route would match? The first route would match because `/about` starts with a `/` followed by any string. This means that the second route will never match because the first route will always match first.
+
+So when developing these routes, it's important to consider the order in which they are defined.  If we want the `/about` route to match, we need to define it before the `/:name` route.
+
+## 🎓 You Do: URL Parameters
+
+Let's get in a rep of the above learnings:
+
+- Create a new route that listens for a `GET` request to the path `/greet/:name`.
+- When a request comes in, send a response that says "Hello, [name]!" where [name] is the value of the `name` parameter in the URL.
