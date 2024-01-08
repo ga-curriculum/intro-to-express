@@ -1,8 +1,9 @@
+
 # ![Intro to Express - Setup](./assets/hero.png)
 
 ## Setup
 
-By the end of this lesson we will create a small server with Express. To get started, we will have to create a new directory and a new file. Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
+By the end of this lesson, we will create a small server with Express. To get started, we will have to create a new directory and a new file. Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
 
 ```bash
 cd ~/code/ga/lectures

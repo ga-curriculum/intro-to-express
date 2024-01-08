@@ -4,13 +4,13 @@
 
 ## Hello World!
 
-By tradition in the programming world, the first program you write in a new language or framework is a program that prints the phrase "Hello, World!" to the screen. Let’s write the obligatory ***Hello, World*** application! We will be using the basic structure of our Express app we already set up.
+By tradition in the programming world, the first program you write in a new language or framework is a program that prints the phrase "Hello, World!" to the screen. Let’s write the obligatory ***Hello, World*** application! We will use the basic structure of the Express app we already set up.
 
 ## Our First Route
 
-Our first route will be a `get` request to the location `localhost:3000/`. Refering to the documentation, we can see that the [`get`](https://expressjs.com/en/5x/api.html#app.get) method is used to define a route that listens for a `GET` request.
+Our first route will be a `get` request to the location `localhost:3000/`. The documentation shows that the [`get`](https://expressjs.com/en/5x/api.html#app.get) method defines a route that listens for a `GET` request.
 
-> Other methods include `post`, `put`, and `delete` which map to the HTTP verbs of the same names.
+> Other methods include `post`, `put`, and `delete`, which map to the HTTP verbs of the same names.
 
 This method takes two arguments:
 
@@ -29,13 +29,13 @@ app.get('/', (req, res) => {
 
 Like most web frameworks, Express uses the *HTTP Method* and the *Path* of the HTTP request to match a route defined in the application.
 
-Above, we defined a route using the `get` method on the Express `app` object. The `get` method defines a route that listens for a `GET` request. The first argument provided to `app.get()`, `/`, defines the path for the route. In this case, the root of the application (the root of the application is just the hostname like [**`localhost:3000`**](http://localhost:3000)).
+Above, we defined a route using the `get` method on the Express `app` object. The `get` method establishes a route that listens for a `GET` request. The first argument provided to `app.get()`, `/`, defines the path for the route. In this case, the root of the application (the root of the application is just the hostname like [**`localhost:3000`**](http://localhost:3000)).
 
-> In Express, all strings used to define a path should start with a forward-slash character (`/`).
+> In Express, all strings that define a path should start with a forward-slash character (`/`).
 
-The second argument provided to `app.get()` is a callback function. Express will execute the route’s callback function only when a request comes in that matches the corresponding method and path for that route. 
+The second argument for `app.get()` is a callback function. Express will execute the route’s callback function only when a request matches that route's corresponding method and path. 
 
-The route’s callback function defines two parameters which we will name `req` & `res`. We could call them anything, but it's convention to use those names.
+The route’s callback function defines two parameters which we will name `req` & `res`. We could call them anything, but using those names is the convention.
 
 - `req`: Represents Express’s [**request object**](https://expressjs.com/en/5x/api.html#req)
 - `res`: Represents Express’s [**response object**](https://expressjs.com/en/5x/api.html#res)
@@ -43,11 +43,11 @@ The route’s callback function defines two parameters which we will name `req` 
 Express provides those two objects as arguments when it invokes the callback.
 
 - The request (`req`) object has properties and methods to access information regarding the current HTTP ***request***, including any data the browser has sent.
-- The response (`res`) object contains properties and methods used to send a response to the client. We've already done so using the `res.send()` method.
+- The response (`res`) object contains properties and methods used to send a response to the client. We've already used the `res.send()` method.
 
-> 😎 Routes will always have a callback function with both `req` and `res` parameters. Be careful not to flip the `req` and `res` parameters when you are writing your callback function.
+> 😎 Routes will always have a callback function with both `req` and `res` parameters. When writing your callback function, be careful not to flip the `req` and `res` parameters.
 
-With all that out of thr way, use the URL bar of your web browser to go to [`localhost:3000`](http://localhost:3000). You should see something like this:
+With all that out of the way, use the URL bar of your web browser to go to [`localhost:3000`](http://localhost:3000). You should see something like this:
 
 ![Hello World Root](./assets/hello-world-root.png)
 
