@@ -9,7 +9,6 @@ This module will cover the basics of building an Express server. You should unde
 - Introduction to Full-Stack Development
 - HTTP Request Response Cycle
 - Introduction to Node
-- Common JS Modules
 
 ## Content
 
@@ -21,7 +20,7 @@ This module will cover the basics of building an Express server. You should unde
 | [Our First Route](./our-first-route/README.md) | -- | -- | Write routes for Express using res.send(). |
 | [URL Parameters](./url-parameters/README.md) | -- | -- | Describe how parameters are used in URLs to access specific requested data |
 | **Total content**                                        | -- | -- | --                  |
-                                     | -- | -- | --                  |
+
 
 ## References
 
