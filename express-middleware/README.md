@@ -1,5 +1,7 @@
 # ![Intro to Express - Express Middleware](./assets/hero.png)
 
+tktk - new lesson needs hero
+
 **Learning Objective:** By the end of this lesson, students will understand the concept of middleware in Express and learn to implement the Morgan logging package to log route-related information.
 
 ## Understanding middleware in Express
