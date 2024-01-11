@@ -19,6 +19,7 @@
 | [Building an Express Server](./building-an-express-server/README.md) | -- | -- | Build a basic Express server listening on port 3000  |
 | [Building our first Route](./building-our-first-route/README.md) | -- | -- | Create a GET route and res.send() a response |
 | [URL Parameters](./url-parameters/README.md) | -- | -- | Describe how parameters are used in URLs to access specific requested data |
+| [Express Middleware](./express-middleware/README.md) | -- | -- | Adding middleware functions to express servers |
 | **Total content**                                        | -- | -- | --                  |
 
 

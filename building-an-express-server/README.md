@@ -74,6 +74,14 @@ After setting up your initial server code in `server.js`, it's time to run it an
 
    > The message confirms that your Express server is up and active. It's now ready to respond to requests sent to `localhost:3000`.
 
+## Stopping your server
+
+The best way to stop an Express server running in a terminal is to use the keyboard interrupt command, which is typically `Ctrl + C`. This command sends a SIGINT (signal interrupt) to the Node.js process running your Express server, causing it to terminate gracefully.
+
+Let's shut it down! 
+
+**`Ctrl + C`**
+
 
 ## Running your Express server with Nodemon for development
 
