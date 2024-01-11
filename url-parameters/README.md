@@ -1,40 +1,48 @@
 # ![Intro to Express - URL Parameters](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to describe how parameters are used in URLs to access specific requested data.
+**Learning Objective:** By the end of this lesson, students will be able to use URL parameters in Express routes to handle dynamic data in requests.
 
-## URL/Route Parameters
+## Understanding URL/Route Parameters
 
-In our web apps, we often need to pass information, such as an identifier for a particular data resource, in the **path** of the HTTP request.
-
-**URL Parameters**, also known as **Route Parameters**, work like parameters in functions, providing a way for data to pass into the route's callback function via the request URL.
-
-Like JavaScript functions, where we define parameters in the function definition and pass arguments when the function is called, URL parameters act as placeholders in a route definition. When a request is made to that route, the actual values in the URL are treated as arguments.
+URL Parameters, also known as Route Parameters, are akin to function parameters but within the context of URL paths. They allow dynamic data, like identifiers for specific resources, to be passed through the URL path of an HTTP request.
 
 ![URL Parameters](./assets/url-parameters.png)
 
-In Express, we define route parameters in the **path string** using a colon followed by the parameter name.
+In simpler terms, it allows us to pass small amounts of information from the browser to the server via the URL.
 
-Here's an example:
+### URL params in Express
+
+In Express, we define these parameters in the path string, using a colon (`:`) followed by the parameter name:
 
 ```javascript
 app.get('/:itemNumber', (req, res) => {
-  // Prints: 123
-  console.log(req.params.itemNumber);
+  // Accessing the parameter
+  console.log(req.params.itemNumber);  // Output could be 123, 456, etc.
 
-  // Will send an H1 in the response with the content: Item 123
+  // Sending a response with the parameter
   res.send(`<h1>Item ${req.params.itemNumber}</h1>`);
 });
 ```
 
-In your browser, visit [`localhost:3000/123`](http://localhost:3000/123). Now visit [`localhost:3000/456`](http://localhost:3000/456). You should see the item number change from 123 to 456. Change the number to anything you want; the page should update accordingly upon refresh.
+> Just like parameters in JavaScript functions are placeholders for actual values passed during function invocation, URL parameters are placeholders in route definitions. The actual values are provided in the URL when a request is made from the browser.
 
-In the above route, the path `/:itemNumber` tells Express to create a route whose path is a `/` followed by any string (e.g., 123, 456, foo, bar, etc.). When a matching request comes in, Express will create a property on `req.params` with a key of `itemNumber` and a value of whatever comes after the slash in the request's path.
+### Testing in the browser
 
-> 🧠 If we were to `console.log` the `req.params` object, we would see `{ itemNumber: '123' }` or `{ itemNumber: '456' }` depending on the request.
+Try visiting `localhost:3000/123` and `localhost:3000/456` in your browser. Notice how the item number in the `console.log` and `<h1>` response changes according to the URL.
 
-## URL Parameters and Route Order
+How this works:
 
-When defining routes with URL parameters, it's essential to consider the order in which the routes are defined. Consider the following two routes:
+- The path `/:itemNumber` is a template. When a request like `localhost:3000/123` is received, Express maps `'123'` to `itemNumber`, which is then accessible via `req.params.itemNumber` on the request object.
+
+### Example with `req.params`
+
+- If you `console.log(req.params)` in the route above, you'll get an output like `{ itemNumber: '123' }` or `{ itemNumber: '456' }`, depending on the request URL.
+
+## Route order and URL parameters
+
+When planning your routes in Express, the order of route definitions is crucial when working with URL parameters
+
+Take a look at the routes below:
 
 ```js
 app.get('/:name', (req, res) => {
@@ -46,18 +54,25 @@ app.get('/about', (req, res) => {
 });
 ```
 
-We have two routes here:
+- In the provided example, the first route `/:name` is dynamic, meaning it uses a route parameter `:name` to match any URL path that starts with a `/` followed by any string. This pattern is quite broad and will match a wide range of URLs, including something like `/about`.
 
-- The first route has a path of `/:name` and will match any `GET` request that starts with a `/` followed by any string.
-- The second route has a path of `/about` and will match any `GET` request that starts with `/about`.
+- The issue arises because this general pattern also matches the specific URL `/about`. As a result, a request to `/about` gets intercepted by the first route `/:name` instead of reaching the intended `/about` route.
 
-Which route would match if we were to try to visit [`localhost:3000/about`](http://localhost:3000/about)? The first route would match because `/about` starts with a `/` followed by any string. This means the second route will never match because the first route will always match first.
+- This behavior makes the specific `/about` route essentially unreachable, as the server always responds with the ***first matching route it encounters***, which in this case is the more generic `/:name` route.
 
-So, when developing these routes, it's essential to consider the order in which they are defined. If we want the `/about` route to match, we must define it before the `/:name` route.
+- To prevent this, it's important to order routes carefully in Express. More specific routes, like `/about`, should be defined **before** more generic routes, like `/:name`, to ensure they are correctly matched and accessible.
 
-## 🎓 You Do: URL Parameters
 
-Let's get in a rep of the above learnings:
+## 🎓 You Do
 
-- Create a new route that listens for a `GET` request to the path `/greet/:name`.
-- When a request comes in, send a response that says `"Hello, [name]!"` where `[name]` is the value of the `name` parameter in the URL.
+### Create a Greeting Route
+
+Practice your new skills:
+
+- Create a route at `/greet/:name`.
+
+- Have it respond with `"Hello, [name]!"`, replacing `[name]` with the actual name provided in the URL.
+
+- Test your route by navigating to `localhost:3000/greet/yourname` in your browser.
+
+

@@ -3,17 +3,17 @@
 
 ## Setup
 
-By the end of this lesson, we will create a small server with Express. To get started, we will have to create a new directory and a new file. Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
+Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
 
 ```bash
 cd ~/code/ga/lectures
 ```
 
-Make a new directory called `express-intro`, then enter this directory:
+Make a new directory called `intro-to-express`, then enter this directory:
 
 ```bash
-mkdir express-intro
-cd express-intro
+mkdir intro-to-express
+cd intro-to-express
 ```
 
 Create a `server.js` file. This file will hold your work for this lecture:
