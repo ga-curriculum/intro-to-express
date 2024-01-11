@@ -118,7 +118,7 @@ app.listen(3000, () => {
 })
 ```
 
-If you want to test it out, copy and paste the 2 middleware functions into your own server, and check the terminal output. 
+Test it out! Copy and paste the middleware functions into your own server, hit a route, and check the terminal output.
 
 ### Key Takeaways
 
