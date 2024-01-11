@@ -56,7 +56,7 @@ Think of ports like doors on a computer. Port `3000` is a common choice for loca
 
 After setting up your initial server code in `server.js`, it's time to run it and see it in action!
 
-1. **Start the server**:
+1. Start the server:
    - Open your terminal and navigate to the directory containing your `server.js` file.
    - Run the server using Node:
 
@@ -64,7 +64,7 @@ After setting up your initial server code in `server.js`, it's time to run it an
      node server.js
      ```
 
-2. **Check the terminal output**:
+2. Check the terminal output:
 
    - Once the server starts, you should see a message in your terminal:
      ```
