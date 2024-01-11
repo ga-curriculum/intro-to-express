@@ -2,12 +2,8 @@
 
 ## Lesson references
 
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
+- [Express](https://expressjs.com/)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [Request Object](https://expressjs.com/en/5x/api.html#req)
+- [Response Object](https://expressjs.com/en/5x/api.html#res)
 
-## Level Up references
-
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()

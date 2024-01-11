@@ -1,33 +1,31 @@
 # ![Intro to Express - Concepts](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to briefly describe what **Express** is, what it does, and why web application frameworks are beneficial.
+**Learning Objective:** By the end of this lesson, students will understand the basics of the Express framework, its applications, and the core functionalities of web application frameworks.
 
-## The Express Framework
+## Introduction to the Express framework
+
+[**Express**](https://expressjs.com/), the most widely used web application framework for Node.js, stands out for its flexibility and minimalistic approach. This popular framework simplifies the process of building robust server-side applications and APIs with Node.js.
 
 ![Express Home Page](./assets/expressjs-hp.png)
 
-[**Express**](https://expressjs.com/) is the most popular web application framework for Node.js and one of the most popular web application frameworks across all technologies. Express is relatively flexible and minimalist, meaning developers have more control over how they build their applications. It also means that there's less to learn to get started!
+### Why choose Express?
 
-Express can be used to build a variety of applications, including:
+- **Simplicity and Control**: Express's minimalistic nature means less initial overhead for developers, offering more control over the architecture and features of their applications.
+- **Versatility**: It's well-suited for a range of applications, including:
+  - **Web Applications**: Serving dynamic HTML content.
+  - **Web Servers**: Handling static and dynamic requests efficiently.
+  - **APIs**: Creating endpoints for client-server communication.
 
-- **Web applications** - Express can be used to build web applications that serve HTML pages to users.
-- **APIs** - Express can be used to build APIs that serve data to client applications.
-- **Web servers** - Express can be used to build web servers that serve static files to users.
+In this module, we'll focus primarily on developing web applications using Express.
 
-We are going to be focusing on using Express to build web applications.
+## Core functionalities of web application frameworks
 
-## The Three Fundamental Capabilities of Web Application Frameworks
+Express exemplifies the key features of web application frameworks, which are essential for building efficient server-side solutions:
 
-![Express Functionality](./assets/express-functionality.png)
+![The Request Response Cycle with Express Server](./assets/request-response-cycle.png)
 
-**Web Application Frameworks** are frameworks designed to help developers build server-side applications faster. They usually contain the following capabilities:
+1. **Routing**: Defining routes (URLs) that client applications can request, crucial for organizing different parts of your application.
+2. **Request Handling**: Processing incoming requests, parsing data, and making decisions based on the route and HTTP method.
+3. **Response Generation**: Combining data with templates to create dynamic content, or directly sending data as a response to client requests.
 
-1. The ability to define "routes" so that client applications can make requests to them.
-2. The ability to process incoming requests.
-3. The ability to generate responses by combining data with templates.
-
-## Review Questions
-
-1. What is Express?
-2. What are the three fundamental capabilities of web application frameworks?
-3. What examples of applications can be built with Express?
+Understanding these core concepts is vital for developing web applications that are responsive, dynamic, and user-friendly.
