@@ -108,3 +108,38 @@ Nodemon is a valuable tool for Node development. It monitors your files for chan
 Once the server is running, you should see a confirmation in your terminal, indicating that it's listening on port 3000. These colorful logs come from the Nodemon package and provide helpful information about the status of your server as your code changes. 
 
 ![Server Running](./assets/server-running.png)
+
+
+## Simplifying server startup with `nodemon` in `package.json`
+
+If you set `server.js` as the main entry point in your `package.json`, you can start your app with just the `nodemon` command.
+
+1. Open your project's `package.json` file.
+
+2. Modify the `main` Property: 
+   - Look for the `main` property, which specifies the entry point file of your application.
+   - Change its value to `server.js` (or the name of your server file if it's different).
+
+```json
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  // ... other properties ...
+}
+```
+
+#### Running your server with nodemon:
+
+- With `server.js` set as the main file, you can now start your server with just:
+
+  ```bash
+  nodemon
+  ```
+
+  Nodemon will automatically reference the `main` property in `package.json` and launch the specified server file.
+
+> This setup is especially useful when working with multiple projects, as it standardizes the server start command across different applications.
+
+

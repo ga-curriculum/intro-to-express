@@ -42,7 +42,7 @@ Let's review the route components:
 Check your terminal to ensure your server is still running, if not restart it with:
 
 ```bash
-nodemon server.js
+nodemon
 ```
 
 Visit [`localhost:3000`](http://localhost:3000) in your browser. You should see "Hello World!" displayed:
