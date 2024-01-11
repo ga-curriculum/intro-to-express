@@ -12,7 +12,7 @@ In simpler terms, it allows us to pass small amounts of information from the bro
 
 ### URL params in Express
 
-In Express, we define these parameters in the path string, using a colon (`:`) followed by the parameter name:
+In Express, we define these parameters in the path string, using a colon `:` followed by the parameter name:
 
 ```javascript
 app.get('/:itemNumber', (req, res) => {
