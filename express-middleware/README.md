@@ -70,7 +70,6 @@ Visit `localhost:3000/` in your browser.
 
 In your server's console, you'll see Morgan logging information about this request, such as the HTTP method, path, response status, and response time.
 
-This log provides valuable insight into the requests your server is handling, making it easier to track how your routes are being accessed and any potential issues.
 
 ## 🎓 You Do
 
