@@ -62,7 +62,6 @@ app.get('/about', (req, res) => {
 
 - To prevent this, it's important to order routes carefully in Express. More specific routes, like `/about`, should be defined **before** more generic routes, like `/:name`, to ensure they are correctly matched and accessible.
 
-
 ## 🎓 You Do
 
 ### Create a Greeting Route
@@ -75,4 +74,32 @@ Practice your new skills:
 
 - Test your route by navigating to `localhost:3000/greet/yourname` in your browser.
 
+## Query Parameters
 
+Another effective way to pass additional information in a URL to a server is though query parameters. Query parameters are added to the end of a URL after a `?` and are formatted as `key=value` pairs. In Express, these parameters are conveniently accessible through the `req.query` object.
+
+For example, consider the following URL `localhost:3000/hello?name=Christy&age=32.` 
+
+This URL contains two query parameters: 
+
+- `name` with a value of "Christy"
+- `age` with a value of "32". 
+
+These parameters follow the `?` symbol in the URL and are separated by `&`.
+
+When a request is made to this URL, the Express server can retrieve these values from the `req.query` object. The `name` and `age` keys in the `req.query` object correspond to the query parameters in the URL. The server can then use this data, for example, to personalize a response message.
+
+Here's how the server processes this request in Express:
+
+```js
+app.get('/hello', (req, res) => {
+    // Accessing query parameters from the request
+    const name = req.query.name;
+    const age = req.query.age;
+
+    // Using the query parameters to customize the response
+    res.send(`Hello there, ${name}! I hear you are ${age} years old!`);
+});
+```
+
+> 🧠 If we were to `console.log` the `req.query` object, you'll see an object representation of the query parameters, which in this case would be `{ name: "Christy", age: "32" }`. This object structure makes it simple to access and use the parameters within the server's response logic.
