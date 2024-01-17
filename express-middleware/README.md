@@ -1,4 +1,4 @@
-# ![Intro to Express - Express Middleware](./assets/hero.png)
+# ![Intro to Express - Express Middleware](./assets/tktk-hero.png)
 
 tktk - new lesson needs hero
 
