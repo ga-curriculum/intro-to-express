@@ -30,7 +30,7 @@ Let's review the route components:
 - **Path Argument**: The first argument `'/'` signifies the root path (`localhost:3000` on your local server).
 - **Callback Function**: The second argument is a callback function that Express calls when the route is matched. It takes two parameters:
 
-  - `req`: The [**Request Object**](https://expressjs.com/en/5x/api.html#req), providing request details.
+  - `req`: The <a href="https://expressjs.com/en/5x/api.html#req" target="blank">**Request Object**</a>, providing request details.
   - `res`: The [**Response Object**](https://expressjs.com/en/5x/api.html#res), used to send a response back to the client.
   
 >  Routes will always have a callback function with both `req` and `res` parameters. When writing your callback function, be careful not to flip the `req` and `res` parameters.
