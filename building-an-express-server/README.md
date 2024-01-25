@@ -1,7 +1,5 @@
 # ![Intro to Express - Building an Express Server](./assets/hero.png)
 
-tktk - we renamed this microlesson
-
 **Learning Objective:** By the end of this lesson, students will understand how to set up a basic Express server and make it listen for requests.
 
 ## Setting Up Express in your project

@@ -1,6 +1,4 @@
-# ![Intro to Express - Express Middleware](./assets/tktk-hero.png)
-
-tktk - new lesson needs hero
+# ![Intro to Express - Express Middleware](./assets/hero.png)
 
 **Learning Objective:** By the end of this lesson, students will understand the concept of middleware in Express and learn to implement the Morgan logging package to log route-related information.
 
@@ -10,7 +8,7 @@ Middleware in Express is a powerful feature that acts as an intermediary between
 
 The primary role of middleware is to intercept incoming requests and perform operations or run specific code before these requests are routed to their designated route handler functions. This allows developers to add functionalities such as logging, authentication, and request parsing to their Express applications.
 
-tktk - need a graphic showing requests being intercepted by middleware before heading to the route
+![Express middleware](./assets/express-middleware.png)
 
 To practice implementing a middleware function, we'll be downloading an NPM package called Morgan and using its built in methods to add functionality to our app.
 

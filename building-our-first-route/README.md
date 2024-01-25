@@ -1,7 +1,5 @@
 # ![Intro to Express - Building Our First Route](./assets/hero.png)
 
-tktk - we renamed this microlesson
-
 **Learning Objective:** Students will learn to write and understand routes in an Express server, focusing on the path and callback function.
 
 ## Introduction to Express routing: "Hello World!"
