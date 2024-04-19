@@ -3,7 +3,7 @@
 ## Lesson references
 
 - [Express](https://expressjs.com/)
-- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [nodemon](https://www.npmjs.com/package/nodemon)
 - [Request Object](https://expressjs.com/en/5x/api.html#req)
 - [Response Object](https://expressjs.com/en/5x/api.html#res)
 
