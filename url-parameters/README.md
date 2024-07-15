@@ -76,7 +76,7 @@ Practice your new skills:
 
 ## Query Parameters
 
-Another effective way to pass additional information in a URL to a server is though query parameters. Query parameters are added to the end of a URL after a `?` and are formatted as `key=value` pairs. In Express, these parameters are conveniently accessible through the `req.query` object.
+Another effective way to pass additional information in a URL to a server is through query parameters. Query parameters are added to the end of a URL after a `?` and are formatted as `key=value` pairs. In Express, these parameters are conveniently accessible through the `req.query` object.
 
 For example, consider the following URL `localhost:3000/hello?name=Christy&age=32.` 
 
