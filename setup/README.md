@@ -2,7 +2,6 @@
   <span class="headline">Intro to Express</span>
   <span class="subhead">Setup</span>
 </h1>
-# ![Intro to Express - Setup](./assets/hero.png)
 
 ## Setup
 
