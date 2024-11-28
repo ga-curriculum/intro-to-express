@@ -1,4 +1,7 @@
-# ![Intro to Express - Building Our First Route](./assets/hero.png)
+<h1>
+  <span class="headline">Intro to Express</span>
+  <span class="subhead">Building Our First Route</span>
+</h1>
 
 **Learning Objective:** Students will learn to write and understand routes in an Express server, focusing on the path and callback function.
 

@@ -1,4 +1,7 @@
-# ![Intro to Express - Building an Express Server](./assets/hero.png)
+<h1>
+  <span class="headline">Intro to Express</span>
+  <span class="subhead">Building an Express Server</span>
+</h1>
 
 **Learning Objective:** By the end of this lesson, students will understand how to set up a basic Express server and make it listen for requests.
 

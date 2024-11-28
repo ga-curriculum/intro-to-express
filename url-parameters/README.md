@@ -1,4 +1,7 @@
-# ![Intro to Express - URL Parameters](./assets/hero.png)
+<h1>
+  <span class="headline">Intro to Express</span>
+  <span class="subhead">URL Parameters</span>
+</h1>
 
 **Learning Objective:** By the end of this lesson, students will be able to use URL parameters in Express routes to handle dynamic data in requests.
 

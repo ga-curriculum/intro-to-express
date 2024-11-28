@@ -1,4 +1,7 @@
-# ![Intro to Express - Concepts](./assets/hero.png)
+<h1>
+  <span class="headline">Intro to Express</span>
+  <span class="subhead">Concepts</span>
+</h1>
 
 **Learning Objective:** By the end of this lesson, students will understand the basics of the Express framework, its applications, and the core functionalities of web application frameworks.
 

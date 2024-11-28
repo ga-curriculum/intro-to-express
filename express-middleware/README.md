@@ -1,4 +1,7 @@
-# ![Intro to Express - Express Middleware](./assets/hero.png)
+<h1>
+  <span class="headline">Intro to Express</span>
+  <span class="subhead">Express Middleware</span>
+</h1>
 
 **Learning Objective:** By the end of this lesson, students will understand the concept of middleware in Express and learn to implement the Morgan logging package to log route-related information.
 
