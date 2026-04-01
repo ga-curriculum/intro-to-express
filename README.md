@@ -34,8 +34,8 @@ In this module, you'll discover the fundamentals of Express, one of the most pop
 
 ### Course landing pages
 
-- [SEB - Software Engineering Bootcamp](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-express/canvas-landing-pages/seb)
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-express/canvas-landing-pages/fallback)
+- [SEB - Software Engineering Bootcamp](https://ga-curriculum.github.io/intro-to-express/canvas-landing-pages/seb)
+- [Fallback](https://ga-curriculum.github.io/intro-to-express/canvas-landing-pages/fallback)
 
 ### Resources
 
@@ -47,4 +47,4 @@ In this module, you'll discover the fundamentals of Express, one of the most pop
 
 ---
 
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
+**Find a 👾 bug 👾 or have suggestions? [Let us know](https://ga-curriculum.github.io/universal-resources-internal/module-feedback.html)!**
